@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta chaset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.8">
+        <title>Document</title>
+    </head>
+<body>
+    <h2>What can JavaScript Do?</h2>
+
+    <p>JavaScript can change HTML arrtibute values.</p>
+
+    <p>
+        In this case JavaScript change the value of thesrv (source) attribute of an image
+    </p>
+
+    <!-- ถ้ากดแล้วจะแสดงรูป bulbon(หลอดไฟสว่าง) -->
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">
+        Turn on the light
+    </button>
+
+    <!-- แสดงรูปหลอดไฟ bulboff(ไฟปิด) -->
+    <img id="myImage" src="pic_bulboff.gif" style="width: 100px" />
+
+    <!-- ถ้ากดแล้วจะแสดงรูป bulboff(หลอดไฟดับ) -->
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">
+        Turn off the light
+    </button>
+</body>
+</html> 
